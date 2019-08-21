@@ -29,7 +29,7 @@ body { /* Background pattern from Toptal Subtle Patterns */
 }
 h1 {
   font-family: 'Georgia', Times, Times New Roman, serif;
-  font-size: 29px;
+  font-size: 34px;
 }
 .links { /* for the div containing 3 links */
   height: 100%;
@@ -38,7 +38,7 @@ h1 {
 a { /* for the links' styles */
   display: block;
   padding: 0 20px;
-  text-decoration: none; /* kills off the default underline/color for links */
+  text-decoration: none;
   font-size: 17px;
   border-right: 1px #efefef solid;
   color: #a69999;
@@ -47,7 +47,7 @@ a { /* for the links' styles */
   transform: translateY(-8px); /* half of <a>'s height */
   float: left;
 }
-a:last-child {
+a:last-child { /*Point of interest: last-child*/
     border-right: none;
 }
 a:hover { /* for when links are hovered over */
@@ -133,21 +133,21 @@ input[type=submit] {
 
 /* Medium Screen */
 @media (max-width: 980px) {
-
-
-
-
+  .content{
+    width: 80%;
+  }
 }
 
 
 
 /* Small Screen */
 @media (max-width: 768px) {
-  .DavidWu {
-    padding: 0 10px;
+  .content{
+    width: 90%;
   }
+  
   h1 {
-    font-size: 20px;
+    font-size: 24px;
   }
   a {
     padding: 0 8px;
@@ -157,5 +157,16 @@ input[type=submit] {
 /* Extra-Small Screen */
 @media (max-width: 640px) {
 
+  .links {
+    position: relative;
+    
+  }
+  .DavidWu {
+    position: center;
+    float: none;
+  }
 
+  #photo {
+    width: 150px;
+  }
 }
