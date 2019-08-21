@@ -156,16 +156,37 @@ input[type=submit] {
 
 /* Extra-Small Screen */
 @media (max-width: 640px) {
-
+  .header{
+    height: 55px;
+  }
+  
+  .banner {
+    width: 34%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
   .links {
     position: relative;
-    
+
   }
   .DavidWu {
     position: center;
     float: none;
+    text-align: center;
+    line-height: 55px;
   }
+  .contenttitle {
+    height: 45px;
+    padding: 10px;
+    margin-bottom: 16px;
+    box-shadow: 0 3px 0px 0px #ddd;
+    color: #4aaaa5;
+}
 
+  .content {
+    padding: 15px;
+  }
   #photo {
     width: 150px;
   }
